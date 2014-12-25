@@ -1,0 +1,9 @@
+machine:
+  ruby: 2.1.2
+  timezone: Asia/Tokyo
+
+deployment:
+  production:
+    branch: master
+    heroku:
+      appname: https://recipes-index-app.herokuapp.com/
