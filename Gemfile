@@ -12,12 +12,15 @@ group :development, :test do
   gem 'guard-spork'
   gem 'guard-rspec'
   gem 'childprocess'
-
+  gem 'factory_girl_rails'
 end
 
 group :test do
   gem 'selenium-webdriver'
   gem 'capybara'
+  gem 'faker'
+  gem 'database_cleaner'
+  gem 'launchy'
 end
 
 gem 'pg'
