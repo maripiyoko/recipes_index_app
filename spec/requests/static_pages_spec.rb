@@ -41,4 +41,11 @@ RSpec.describe "StaticPages", :type => :request do
       expect(page).to have_title('Recipes Index App | About Us')
     end
   end
+
+  describe "Contact page" do
+    it "should have the right title" do
+      visit static_pages_contact_path
+      expect(page).to have_title('Recipes Index App | Contact Us')
+    end
+  end
 end
