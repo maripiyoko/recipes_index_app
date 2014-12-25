@@ -8,3 +8,8 @@ deployment:
     branch: master
     heroku:
       appname: recipes-index-app
+
+notify:
+  webhook:
+    - url: https://hooks.slack.com/services/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
+
