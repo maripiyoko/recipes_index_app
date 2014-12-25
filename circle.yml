@@ -7,4 +7,4 @@ deployment:
   production:
     branch: master
     heroku:
-      appname: https://recipes-index-app.herokuapp.com/
+      appname: recipes-index-app
