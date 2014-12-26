@@ -13,5 +13,5 @@
  *
  *= require_self
  *= require flatly
- *= require custom
+ *= require_tree .
  */
