@@ -8,5 +8,7 @@ deployment:
     branch: master
     heroku:
       appname: recipes-index-app
-  post:
-    - notify-to-slack.sh
+
+notify:
+  webhooks:
+    - url: https://hubotan.herokuapp.com
