@@ -6,11 +6,11 @@ RSpec.describe "StaticPages", :type => :request do
 
   describe "Home page" do
     before do
-      visit static_pages_home_path
+      visit root_path
     end
 
     it "works! (now write some real specs)" do
-      get static_pages_home_path
+      get root_path
       expect(response).to have_http_status(200)
     end
 
@@ -29,7 +29,7 @@ RSpec.describe "StaticPages", :type => :request do
 
   describe "Help page" do
     before do
-      visit static_pages_help_path
+      visit help_path
     end
     it "should have the content Help" do
       expect(page).to have_content('Help')
@@ -42,7 +42,7 @@ RSpec.describe "StaticPages", :type => :request do
 
   describe "About page" do
     before do
-      visit static_pages_about_path
+      visit about_path
     end
     it "shuld have the content About Us" do
       expect(page).to have_content('About Us')
@@ -55,7 +55,7 @@ RSpec.describe "StaticPages", :type => :request do
 
   describe "Contact page" do
     before do
-      visit static_pages_contact_path
+      visit contact_path
     end
     it "should have the right title" do
       expect(page).to have_title("#{base_title} | Contact Us")
