@@ -104,4 +104,9 @@ RSpec.describe User, :type => :model do
     end
     it { should_not be_valid }
   end
+
+  describe "remember_token" do
+    before { @user.save }
+    its(:remember_token) { should_not be_blank }
+  end
 end
